@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: picklist-service
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/partfinder
+server:
+    port: 9002

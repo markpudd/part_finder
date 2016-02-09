@@ -1,0 +1,7 @@
+rootProject.name = 'Partfinder'
+include 'StoreService'
+include 'PartService'
+include 'PartFinder-Web'
+include 'PickListService'
+include 'SpringServices'
+include 'Eureka'

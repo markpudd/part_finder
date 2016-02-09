@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: zuul-proxy
+zuul:
+  routes:
+    parts-service:
+      path: /parts/**
+      stripPrefix: false
+    stores-service:
+      path: /stores/**
+      stripPrefix: false
+    picklists-services:
+      path: /picklists/**
+      url: http://localhost:9002
+      stripPrefix: false
+  level:
+    ROOT: INFO
+    org.springframework.web: DEBUG

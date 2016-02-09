@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" ng-app="PartFinder">
+<head>
+  <script src="webjars/jquery/2.1.4/dist/jquery.min.js"></script>
+  <script src="webjars/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script src="webjars/angular/1.4.7/angular.min.js"></script>
+  <script src="webjars/angular-route/1.4.7/angular-route.min.js"></script>
+  <script src="webjars/angular-resource/1.4.7/angular-resource.min.js"></script>
+  
+
+  <script src="javascripts/part_finder.js"></script>
+  <script src="javascripts/services.js"></script>
+  <script src="javascripts/part.js"></script>
+  <script src="javascripts/pick_list.js"></script>
+  <script src="javascripts/store.js"></script>
+  <script src="javascripts/config.js"></script>
+  
+  <link rel="stylesheet" href="stylesheets/style.css" />
+  <link rel="stylesheet" href="webjars/bootstrap/3.2.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="webjars/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+  
+    <title>Part Finder</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+    <div th:replace="fragments/menu :: menu"></div>
+    <div ng-view=""></div>
+</body>
+</html>
